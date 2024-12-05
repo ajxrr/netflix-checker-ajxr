@@ -1,16 +1,10 @@
-<p align="center">
-  <img src="https://img.shields.io/github/contributors/Plasmonix/Netflixer.svg?style=for-the-badge"/>
-  <img src="https://img.shields.io/github/forks/Plasmonix/Netflixer.svg?style=for-the-badge"/>
-  <img src="https://img.shields.io/github/stars/Plasmonix/Netflixer.svg?style=for-the-badge"/>
-  <img src="https://img.shields.io/github/issues/Plasmonix/Netflixer.svg?style=for-the-badge"/>
-  <img src="https://img.shields.io/github/license/Plasmonix/Netflixer.svg?style=for-the-badge"/>
-</p>
+
   
 ---------------------------------------
   
 <div align="center">
   <a href="https://github.com/Plasmonix/Netflixer">
-    <img src="https://raw.githubusercontent.com/Plasmonix/Netflixer/main/demo.png">
+    <img src="./image.png">
   </a>
 </div>
 
@@ -18,7 +12,7 @@
 ### 🛠 Setting-up
 
 ```
-git clone https://github.com/Plasmonix/Netflixer
+git clone https://github.com/ajxrr/netflix-checker-ajxr.git
 cd netflix-checker-ajxr
 pip install -r requirements.txt
 python main.py

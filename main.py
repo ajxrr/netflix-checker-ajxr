@@ -2,11 +2,7 @@ import os, re, time, random, threading, requests, easygui, datefinder
 from colorama import Fore
 from bs4 import BeautifulSoup
 
-# Credit to Pycenter by billythegoat356
-# Github: https://github.com/billythegoat356/pycenter/
-# License: https://github.com/billythegoat356/pycenter/blob/main/LICENSE
-
-def center(var: str, space: int = None):  # From Pycenter
+def center(var: str, space: int = None):  
     if not space:
         space = (os.get_terminal_size().columns- len(var.splitlines()[int(len(var.splitlines()) / 2)])) / 2
     
@@ -26,18 +22,20 @@ class Netflixer:
         self.lock = threading.Lock()
 
     def ui(self):
-        os.system("cls && title [NETFLIXER] - Made by Plasmonix")
+        os.system("cls && title [netflix-checker] - Made by Ajxr")
         text = """
             
-                      ███▄    █ ▓█████▄▄▄█████▓  █████▒██▓     ██▓▒██   ██▒▓█████  ██▀███  
-                      ██ ▀█   █ ▓█   ▀▓  ██▒ ▓▒▓██   ▒▓██▒    ▓██▒▒▒ █ █ ▒░▓█   ▀ ▓██ ▒ ██▒
-                     ▓██  ▀█ ██▒▒███  ▒ ▓██░ ▒░▒████ ░▒██░    ▒██▒░░  █   ░▒███   ▓██ ░▄█ ▒
-                     ▓██▒  ▐▌██▒▒▓█  ▄░ ▓██▓ ░ ░▓█▒  ░▒██░    ░██░ ░ █ █ ▒ ▒▓█  ▄ ▒██▀▀█▄  
-                     ▒██░   ▓██░░▒████▒ ▒██▒ ░ ░▒█░   ░██████▒░██░▒██▒ ▒██▒░▒████▒░██▓ ▒██▒
-                     ░ ▒░   ▒ ▒ ░░ ▒░ ░ ▒ ░░    ▒ ░   ░ ▒░▓  ░░▓  ▒▒ ░ ░▓ ░░░ ▒░ ░░ ▒▓ ░▒▓░
-                     ░ ░░   ░ ▒░ ░ ░  ░   ░     ░     ░ ░ ▒  ░ ▒ ░░░   ░▒ ░ ░ ░  ░  ░▒ ░ ▒░
-                        ░   ░ ░    ░    ░       ░ ░     ░ ░    ▒ ░ ░    ░     ░     ░░   ░ 
-                              ░    ░  ░                   ░  ░ ░   ░    ░     ░  ░   ░    """
+                         ██▓███    ▒███ ██ ▄██ ██▀███     
+                        ▓██░  ██  ▒▒██▒  ██▄██ ██ ▒ ██▒▒
+                        ▓██████▓   ▒███ ▓ ██░ ▓██ ░▄██▒▒
+                        ▒██  ▓▒███  ████▒████ ▒██▀▀█▄  ▒
+                        ▒██▒ ░████████▒▒██▒ ██▓██▒░ ██▓▒░
+                        ▒▓▒░ ░  ░▒ ▒▓▒ ▒ ░▒ ▒▒ ▓▒░ ▒▓ ░▒▓░░ 
+                        ░▒ ░     ░ ░▒  ░ ░░ ░▒ ▒░  ░▒ ░ ▒░ 
+                        ░░       ░  ░  ░  ░ ░░ ░   ░░   ░ ░ 
+                                    ░      ░  ░     ░        
+
+"""
         faded = ""
         red = 40
         for line in text.splitlines():
@@ -47,7 +45,7 @@ class Netflixer:
                 if red > 255:
                     red = 255
         print(center(faded))
-        print(center(f"{Fore.LIGHTYELLOW_EX}\ngithub.com/Plasmonix\n{Fore.RESET}"))
+        print(center(f"{Fore.LIGHTYELLOW_EX}\ngithub.com/ajxrr\n{Fore.RESET}"))
 
     def cpmCounter(self):
         while True:
